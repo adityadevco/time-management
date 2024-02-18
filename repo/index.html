@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Management Tool</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('bg-image.jpg'); /* Background image */
+            background-size: cover;
+            background-repeat: no-repeat;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header-bg">
+        <div class="container">
+            <h1 class="title">Time Management Tool</h1>
+            <p class="subtitle">Enhance your productivity and focus</p>
+            <p class="team">Created by Team Anexian</p>
+            <p class="creator">Aditya Agrawal</p>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <section class="introduction">
+                <h2>Introduction</h2>
+                <p>Welcome to the Time Management Tool! Input your study preferences and goals below, and let our AI-powered study planner optimize your study schedule for maximum productivity.</p>
+                <p>Below, you can specify your preferred study time, upcoming deadline, and preferred focus techniques. After submitting, the tool will generate a personalized study plan tailored to your needs.</p>
+            </section>
+
+            <section class="planner">
+                <h2>AI-Powered Study Planner</h2>
+                <p>Input your study preferences and goals, and let our AI optimize your study schedule.</p>
+                <!-- Form for inputting study preferences -->
+                <form id="study-form">
+                    <!-- Input fields for study preferences -->
+                    <label for="study-time">Preferred Study Time (hours):</label>
+                    <input type="number" id="study-time" name="study-time" min="1" max="24" required>
+
+                    <label for="deadline">Upcoming Deadline:</label>
+                    <input type="date" id="deadline" name="deadline" required>
+
+                    <label for="focus-techniques">Preferred Focus Techniques:</label>
+                    <textarea id="focus-techniques" name="focus-techniques" placeholder="Enter focus techniques"></textarea>
+                    <div class="focus-techniques-explanation">
+                        <h3>Focus Techniques</h3>
+                        <p><strong>Pomodoro Technique:</strong> Break work into intervals, typically 25 minutes of focused work followed by a short break.</p>
+                        <p><strong>Time Blocking:</strong> Allocate specific time blocks for different tasks or projects.</p>
+                        <p><strong>Flow State:</strong> Achieve a state of deep concentration and engagement in the task at hand.</p>
+                        <p><strong>Pair Programming:</strong> Collaborate with another developer by working together on the same codebase.</p>
+                        <p><strong>Test-Driven Development (TDD):</strong> Write tests before writing actual code.</p>
+                        <!-- Add more focus techniques as needed -->
+                    </div>
+
+                    <!-- Submit button -->
+                    <button type="submit">Optimize Schedule</button>
+                </form>
+            </section>
+
+            <section class="reminders">
+                <h2>Deadline Reminders</h2>
+                <p>Stay on track with your deadlines by setting up reminders.</p>
+                <!-- List of upcoming deadlines -->
+                <ul id="reminder-list">
+                    <!-- Dynamically populated with JavaScript -->
+                </ul>
+            </section>
+
+            <section class="progress">
+                <h2>Progress Tracking</h2>
+                <p>Monitor your study progress to stay motivated.</p>
+                <!-- Progress bar to visualize study progress -->
+                <progress id="progress-bar" value="0" max="100"></progress>
+                <p id="progress-text">Current progress: 0%</p>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Time Management Tool. All rights reserved to ANEXIAN.</p>
+            <button class="contact-button">Contact Us</button>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

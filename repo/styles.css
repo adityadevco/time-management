@@ -1,0 +1,170 @@
+/* Styles for the entire webpage */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Arial", sans-serif;
+    background-image: url('bg-image.jpg'); /* Background image */
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff; /* White text */
+}
+
+header {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.title {
+    font-family: "Times New Roman", serif;
+    font-size: 48px; /* Increased font size */
+    font-weight: bold;
+    margin: 0;
+    cursor: pointer; /* Cursor pointer for hover effect */
+    transition: color 0.3s; /* Smooth transition */
+}
+
+.title:hover {
+    color: red; /* Red color on hover */
+}
+
+.subtitle {
+    font-family: "Georgia", serif;
+    font-size: 24px; /* Increased font size */
+    margin: 10px 0;
+    color: #ff6347; /* Coral subheading color */
+}
+
+.team {
+    font-family: "Arial", sans-serif;
+    font-size: 18px; /* Increased font size */
+    margin-bottom: 5px;
+}
+
+.creator {
+    font-family: "Arial", sans-serif;
+    font-size: 18px; /* Increased font size */
+    font-style: italic;
+}
+
+main {
+    padding: 40px; /* Increased padding */
+    text-align: center; /* Center content */
+}
+
+h2, h3 {
+    font-family: "Helvetica", sans-serif;
+    color: #ff6347; /* Coral heading color */
+}
+
+/* New CSS for subheading hover effect */
+h2:hover, h3:hover {
+    color: #cfff04; /* Neon yellow on hover */
+    transition: color 0.2s; /* Adjusted timing for hover effect */
+}
+
+/* Styles for the form */
+label, input, textarea {
+    display: block;
+    margin: 0 auto 20px; /* Increased margin */
+    font-family: "Arial", sans-serif;
+    font-size: 20px; /* Increased font size */
+    text-align: center; /* Center text */
+    width: 80%; /* Adjusted width */
+}
+
+textarea {
+    height: 150px; /* Increased height */
+    resize: vertical;
+}
+
+button {
+    background-color: #ff6347; /* Coral button background */
+    color: #fff;
+    border: none;
+    padding: 15px 30px; /* Increased padding */
+    cursor: pointer;
+    border-radius: 8px; /* Increased border radius */
+    font-family: "Arial", sans-serif;
+    font-size: 20px; /* Increased font size */
+    transition: background-color 0.2s, transform 0.2s; /* Adjusted timing for hover effect */
+}
+
+button:hover {
+    background-color: #39ff14; /* Neon green on hover */
+    transform: translateY(-3px); /* Added slight upward translation */
+}
+
+/* Styles for the explanations */
+.focus-techniques-explanation {
+    margin-top: 40px; /* Increased margin */
+    text-align: left;
+    max-width: 800px; /* Increased max-width */
+    margin: 0 auto 40px; /* Center explanation section */
+}
+
+.focus-techniques-explanation h3 {
+    font-family: "Helvetica", sans-serif;
+    font-size: 24px; /* Increased font size */
+    margin-bottom: 20px; /* Increased margin */
+    color: #ff6347; /* Coral heading color */
+}
+
+.focus-techniques-explanation p {
+    font-family: "Arial", sans-serif;
+    font-size: 20px; /* Increased font size */
+    margin-bottom: 10px; /* Increased margin */
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+    .title {
+        font-size: 36px; /* Adjusted font size for smaller screens */
+    }
+
+    .subtitle {
+        font-size: 20px; /* Adjusted font size for smaller screens */
+    }
+
+    .team, .creator {
+        font-size: 16px; /* Adjusted font size for smaller screens */
+    }
+
+    main {
+        padding: 20px; /* Adjusted padding for smaller screens */
+    }
+
+    label, input, textarea {
+        font-size: 16px; /* Adjusted font size for smaller screens */
+        width: 100%; /* Adjusted width for smaller screens */
+    }
+
+    button {
+        font-size: 16px; /* Adjusted font size for smaller screens */
+        padding: 10px 20px; /* Adjusted padding for smaller screens */
+    }
+
+    .focus-techniques-explanation {
+        font-size: 16px; /* Adjusted font size for smaller screens */
+    }
+}
+/* Styles for the contact button */
+.contact-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.contact-button:hover {
+    color: #00f; /* Blue on hover */
+}
+
+.contact-button::after {
+    content: "\2709"; /* Unicode for envelope icon */
+    margin-left: 5px;
+}
